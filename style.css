@@ -1,0 +1,129 @@
+/* nav */
+.isi-navbar li + li {
+  margin-left: 100px;
+}
+
+/* nav */
+.custom-navbar {
+    height: 100px;
+}
+
+/* hero section */
+ #hero {
+    background: linear-gradient(135deg, #4e54c8, #8f94fb); /* Ganti ini sesuai selera */
+    color: white;
+  }
+
+  @keyframes fadeZoomIn {
+    0% {
+      opacity: 0;
+      transform: scale(0.8);
+    }
+    100% {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+
+  @keyframes slideUp {
+    0% {
+      opacity: 0;
+      transform: translateY(40px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  /* Terapkan ke Elemen */
+  .hero-image {
+    animation: fadeZoomIn 1.2s ease-out forwards;
+  }
+
+  .hero-title {
+    opacity: 0;
+    animation: slideUp 1s ease-out 0.5s forwards;
+  }
+
+  .hero-desc {
+    opacity: 0;
+    animation: fadeZoomIn 1s ease-out 1s forwards;
+  }
+
+  /* about */
+  /* Background gradient + text color */
+  #about {
+    height: 700px;
+  }
+  
+  .about-section {
+    background: linear-gradient(135deg, #4e54c8, #8f94fb);
+    color: white;
+    animation: fadeInUp 1.5s ease-in-out both;
+  }
+
+  /* Heading dengan garis bawah */
+
+  .about-heading {
+    font-size: 2.5rem;
+    position: relative;
+    display: inline-block;
+    animation: slideUp 1s ease-out forwards;
+  }
+
+  .about-heading::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 3px;
+    background: white;
+    margin: 10px auto 0;
+    border-radius: 2px;
+  }
+
+  /* Paragraf bergaya */
+
+
+.container {
+  text-align: center;
+}
+
+  .about-paragraph {
+    max-width: 700px;
+    margin: 0 auto;
+    font-size: 1.125rem;
+    line-height: 1.8;
+    animation: fadeIn 2s ease-out forwards;
+    opacity: 0;
+  }
+
+  .card-first {
+    height: 400px;
+  }
+
+  /* Animasi */
+  @keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(30px); }
+    to   { opacity: 1; transform: translateY(0); }
+  }
+
+  @keyframes slideUp {
+    from { opacity: 0; transform: translateY(40px); }
+    to   { opacity: 1; transform: translateY(0); }
+  }
+
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+  }
+
+  
+
+
+/* Offcanvas Menu */ 
+@media (max-width: 991.98px) {
+    .offcanvas-half {
+      width: 50% !important; /* ✅ Batasi lebar ke 50% layar */
+    }
+}
